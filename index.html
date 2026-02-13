@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PBL2 Cats vs Dogs</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+body { background:#020617; color:white; font-family:sans-serif;}
+.glass { background: rgba(255,255,255,.05); padding:20px; border-radius:20px;}
+</style>
+</head>
+
+<body>
+
+<div class="text-center mt-20">
+<h1 class="text-5xl font-bold text-blue-400">Image Classification using CNN (Cats vs Dogs)</h1>
+<p class="mt-4 italic text-gray-400">PBL-2 Mid Term Evaluation 2026</p>
+<p class="mt-2">Student: Kshitij Kumar</p>
+<p>Reg No: YOUR_REG_NO</p>
+</div>
+
+<section class="glass m-10">
+<h2 class="text-2xl text-blue-400">Problem Statement</h2>
+<p>Manual image classification is time-consuming and error-prone. This project automates classification using CNN.</p>
+</section>
+
+<section class="glass m-10">
+<h2 class="text-2xl text-blue-400">Dataset</h2>
+<p>Microsoft Cats vs Dogs Dataset (via Kaggle)</p>
+<p>~25,000 labeled images</p>
+</section>
+
+<section class="glass m-10">
+<h2 class="text-2xl text-blue-400">Methodology</h2>
+<ul class="list-disc ml-6">
+<li>Dataset Loading</li>
+<li>Image Preprocessing</li>
+<li>CNN Model Training</li>
+<li>Evaluation</li>
+</ul>
+</section>
+
+<section class="glass m-10">
+<h2 class="text-2xl text-blue-400">Results (Initial)</h2>
+<p>Accuracy: XX.X%</p>
+<canvas id="chart"></canvas>
+</section>
+
+<section class="glass m-10">
+<h2 class="text-2xl text-blue-400">Future Work</h2>
+<ul class="list-disc ml-6">
+<li>Improve accuracy</li>
+<li>Apply data augmentation</li>
+<li>Deploy model</li>
+</ul>
+</section>
+
+<footer class="text-center text-gray-500 mt-20 mb-10">
+PBL-2 • Dept of CSE • 2026
+</footer>
+
+<script>
+new Chart(document.getElementById("chart"),{
+type:"bar",
+data:{
+labels:["Baseline","Our Model"],
+datasets:[{data:[70,85],backgroundColor:["#334155","#3b82f6"]}]
+},
+options:{plugins:{legend:{display:false}}}
+});
+</script>
+
+</body>
+</html>
